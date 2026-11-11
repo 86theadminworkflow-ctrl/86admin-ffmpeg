@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify, send_file
-import subprocess, os, uuid
+import subprocess, os, uuid, static_ffmpeg
+
+static_ffmpeg.add_paths()
 
 app = Flask(__name__)
 
